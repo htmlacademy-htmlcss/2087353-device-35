@@ -8,26 +8,28 @@
 
   <body>
     <header class="page-header">
-      <nav class="navigation">
-        <a class="link-main-page" href="index.html"><img class="logo logo-header" src="#" alt="Логотип магазина"></a>
+      <nav class="user-navigation">
+        <a class="link-main-page" href="index.html"><img class="logo logo-header" src="#" alt="Логотип магазина" ></a>
         <form class="header-form-search" action="https://echo.htmlacademy.ru/" method="get">
-          <input id="search-field-id" type="text" name="searchfeld">
-          <input type="submit" value="Найти">
+          <input class="user-search" id="search-field-id" type="search" name="searchfeld">
+          <button class="button button-search-header" type="submit" value="Найти">Найти</button>
         </form>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Войти</a>
+        <ul class="user-navigation-list">
+          <li class="user-navigation-item">
+            <a class="user-navigation-link" href="#">Войти</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Сравнить</a>
+        </ul>
+        <ul class="user-navigation-list">
+          <li class="user-navigation-item">
+            <a class="user-navigation-link" href="#">Сравнить</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Корзина</a>
+          <li class="user-navigation-item">
+            <a class="user-navigation-link" href="#">Корзина</a>
           </li>
         </ul>
       </nav>
       <nav class="main-nav">
-        <button class="button button-catalogue">Кнопка с текстом</button>
+        <button class="button button-catalogue" type="button">Каталог товаров</button>
         <ul class="main-navigation-list">
           <li class="main-navigation-item">
             <a class="main-navigation-link" href="#">Доставка</a>
@@ -41,21 +43,6 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link no-active-link">Моноподы для селфи</a>
-          </li>
-        </ul>
-      </header>
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <span class="section-filter-title">фильтр:</span>
