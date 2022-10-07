@@ -30,6 +30,10 @@ body {
   background: #ffffff;
 }
 
+.page-header {
+  background-color: #FFE17F;
+}
+
 input[type=search]::placeholder {
   font-family: "Rubik";
   font-size: 16px;
@@ -75,6 +79,10 @@ h3.advantages-product {
   line-height: 50px;
 }
 
+.index-columns {
+  background-color: #F0F0F0;
+}
+
 .button {
   font-family: "Raleway";
   font-weight: 800;
@@ -106,12 +114,18 @@ h3.advantages-product {
   letter-spacing: 0.02em;
 }
 
+
+
 h2 {
   font-family: Raleway;
   color: #000000;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+}
+
+.delivery-rare-product{
+  background-color: #F0F0F0;
 }
 
 .title-delivery-rare-product {
@@ -148,6 +162,10 @@ h3 {
   line-height: 30px;
 }
 
+.subscription {
+  background-color: #F0F0F0;
+}
+
 input[type=email]::placeholder {
   font-family: Rubik;
   font-size: 18px;
@@ -166,19 +184,24 @@ input[type=email]::placeholder {
 }
 
 .page-footer {
+  background-color: #444444;
+}
+
+.page-footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 }
 
-.footr-navigation-list {
+.footer-navigation-link {
   font-family: Raleway;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .phone-call {
