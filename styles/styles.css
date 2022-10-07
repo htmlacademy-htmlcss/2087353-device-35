@@ -23,9 +23,165 @@
 }
 
 body {
-font-family: "Raleway", sans-serif;
-font-size: 18px;
-line-height: 30px;
-color: #444444;
-background-color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  background: #ffffff;
+}
+
+input[type=search]::placeholder {
+  font-family: "Rubik";
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.button.button-search-header {
+  font-family: "Rubik";
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.user-navigation-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.button.button-catalogue {
+  font-family: "Raleway";
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.main-navigation-link {
+  font-family: "Raleway";
+  color: #000000;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+h3.advantages-product {
+  font-family: Raleway;
+  font-weight: 800;
+  color: #000000;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.button {
+  font-family: "Raleway";
+  font-weight: 800;
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.character {
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.title-character {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.title-category {
+  font-family: "Raleway";
+  font-weight: 800;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-family: Raleway;
+  color: #000000;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.title-delivery-rare-product {
+  font-family: Raleway;
+  color: #000000;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.delivery-rare-product {
+  text-align: center;
+}
+
+.about-us-item {
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.contact-phone {
+  color: #444444;
+  text-decoration: none;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+input[type=email]::placeholder {
+  font-family: Rubik;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.button.button-subscription {
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.page-footer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footr-navigation-list {
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.phone-call {
+  text-decoration: none;
+  color: #ffffff;
 }
