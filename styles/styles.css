@@ -114,9 +114,23 @@ h3.advantages-product {
   letter-spacing: 0.02em;
 }
 
+.delivery-information {
+  font-family: Raleway;
+  color: #000000;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
 
+.about-us-title {
+  font-family: Raleway;
+  color: #000000;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
 
-h2 {
+.contacts-title {
   font-family: Raleway;
   color: #000000;
   font-weight: 800;
@@ -144,6 +158,8 @@ h2 {
   text-align: center;
 }
 
+
+
 .about-us-item {
   color: #000000;
   font-weight: 700;
@@ -156,11 +172,18 @@ h2 {
   text-decoration: none;
 }
 
-h3 {
+.contacts-time-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
+
+.contacts-address-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
 
 .subscription {
   background-color: #F0F0F0;
@@ -208,3 +231,4 @@ input[type=email]::placeholder {
   text-decoration: none;
   color: #ffffff;
 }
+/* Страница каталога */
