@@ -40,6 +40,7 @@ body {
 
 .user-search {
   font-family: "Rubik", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
@@ -129,22 +130,6 @@ body {
   font-size: 50px;
   line-height: 50px;
 }
-/*
-.about-us-title {
-  font-family: "Raleway", sans-serif;
-  color: #000000;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-} */
-
-/* .contacts-title {
-  font-family: "Raleway", sans-serif;
-  color: #000000;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-} */
 
 .delivery-rare-product{
   background-color: #F0F0F0;
@@ -197,7 +182,7 @@ body {
   background-color: #F0F0F0;
 }
 
-input[type=email]::placeholder {
+.subscription-email {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
