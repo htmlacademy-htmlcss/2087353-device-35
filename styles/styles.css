@@ -61,6 +61,10 @@ body {
   text-transform: uppercase;
 }
 
+.main-navigation-item {
+  font-family: "Raleway", sans-serif;
+}
+
 .main-navigation-link {
   font-family: "Raleway", sans-serif;
   color: #000000;
