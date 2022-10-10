@@ -34,7 +34,7 @@ body {
   background-color: #FFE17F;
 }
 
-input[type=search]::placeholder {
+.user-search {
   font-family: Rubik, sans-serif;
   font-size: 16px;
   line-height: 20px;
