@@ -23,7 +23,7 @@
 }
 
 body {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
@@ -35,14 +35,14 @@ body {
 }
 
 .user-search {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
 }
 
 .button.button-search-header {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
@@ -54,7 +54,7 @@ body {
 }
 
 .button.button-catalogue {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -62,7 +62,7 @@ body {
 }
 
 .main-navigation-link {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 800;
   line-height: 21px;
@@ -72,7 +72,7 @@ body {
 }
 
 h3.advantages-product {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   color: #000000;
   font-size: 50px;
@@ -84,7 +84,7 @@ h3.advantages-product {
 }
 
 .button {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   color: #000000;
   font-size: 18px;
@@ -106,7 +106,7 @@ h3.advantages-product {
 }
 
 .title-category {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   color: #000000;
   font-size: 18px;
@@ -115,7 +115,7 @@ h3.advantages-product {
 }
 
 .delivery-information {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 800;
   font-size: 50px;
@@ -123,7 +123,7 @@ h3.advantages-product {
 }
 
 .about-us-title {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 800;
   font-size: 50px;
@@ -131,7 +131,7 @@ h3.advantages-product {
 }
 
 .contacts-title {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 800;
   font-size: 50px;
@@ -143,7 +143,7 @@ h3.advantages-product {
 }
 
 .title-delivery-rare-product {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 800;
   font-size: 20px;
@@ -190,14 +190,14 @@ h3.advantages-product {
 }
 
 input[type=email]::placeholder {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
 }
 
 .button.button-subscription {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -218,7 +218,7 @@ input[type=email]::placeholder {
 }
 
 .footer-navigation-link {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -234,7 +234,7 @@ input[type=email]::placeholder {
 /* Страница каталога */
 
 .bread-crumbs-title {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 800;
   font-size: 50px;
@@ -242,7 +242,7 @@ input[type=email]::placeholder {
 }
 
 .breand-crumbs-link {
-  font-family: Rubik, sans-serif;
+  font-family: "Rubik", sans-serif;
   color: #000000;
   font-weight: 400;
   font-size: 16px;
@@ -255,7 +255,7 @@ input[type=email]::placeholder {
 }
 
 .section-filter-title {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 800;
   font-size: 16px;
@@ -280,7 +280,7 @@ input[type=email]::placeholder {
 }
 
 .select-control-title {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 800;
   font-size: 16px;
@@ -317,7 +317,7 @@ input[type=email]::placeholder {
 }
 
 .pagination-prev {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #444444;
   font-weight: 800;
   line-height: 21px;
@@ -343,7 +343,7 @@ input[type=email]::placeholder {
 }
 
 .pagination-next {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
