@@ -22,17 +22,20 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
   background: #ffffff;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 
 .visually-hidden {
@@ -56,6 +59,17 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.page-container {
+margin: 0 auto;
+width: 1160px;
+}
+
+.delivery-rare-product {
+  margin: 0 auto;
+  width: 1160px;
+}
+
 .page-header {
   background-color: #FFE17F;
 }
@@ -108,6 +122,10 @@ body {
   color: #000000;
   font-size: 50px;
   line-height: 50px;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .index-columns {
