@@ -30,8 +30,19 @@ body {
   background: #ffffff;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .visually-hidden {
   display: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .button {
