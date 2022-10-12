@@ -207,7 +207,6 @@ width: 1160px;
   line-height: 30px;
 }
 
-
 .subscription {
   background-color: #F0F0F0;
 }
@@ -255,7 +254,12 @@ width: 1160px;
   text-decoration: none;
   color: #ffffff;
 }
+
+
+
 /* Страница каталога */
+
+
 
 .bread-crumbs-title {
   font-family: "Raleway", sans-serif;
@@ -274,9 +278,31 @@ width: 1160px;
   text-decoration: none;
 }
 
-.catalog-products-filters {
+
+.catalog-container {
+  display: flex;
   background-color: #F0F0F0;
 }
+
+.catalog-inner-container {
+  margin: 0 auto;
+  width: 1160px;
+  display: flex;
+}
+
+.catalog-filters-container {
+  width:320px;
+  display: flex;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.page-catalog-container {
+width: 840px;
+background-color: #ffffff;
+padding-bottom: 78px;
+}
+
 
 .section-filter-title {
   font-family: "Raleway", sans-serif;
@@ -301,6 +327,10 @@ width: 1160px;
 
 .catalog-products-sorting {
   background-color: #F0F0F0;
+}
+
+.catalog-products {
+padding: 70px 40px 40px 44px;
 }
 
 .select-control-title {
