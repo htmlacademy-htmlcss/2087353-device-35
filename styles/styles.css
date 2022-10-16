@@ -188,6 +188,8 @@ body {
 
 .delivery-rare-product {
   margin: 70px auto 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 1160px;
   display: flex;
   justify-content: center;
