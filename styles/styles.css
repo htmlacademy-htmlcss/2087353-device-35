@@ -86,10 +86,10 @@ body {
   margin-top: -100px;
   padding-left: 30px;
   width: 560px;
+  flex-wrap: wrap;
 }
 
 .slider-button {
-
   margin: auto;
   display: none;
 }
@@ -104,6 +104,28 @@ body {
 
 .slider-next {
   order: 3;
+}
+
+.slider-pagination {
+  min-width: 76px;
+  min-height: 12px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  order: 4;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.slider-pagination-item {
+  padding-right: 20px;
+  min-width: 12px;
+  min-height: 12px;
+}
+
+.slider-pagination-item:last-child {
+  padding-right: 0;
 }
 
 .advantages-product-wrapper {
@@ -159,7 +181,8 @@ body {
 .personal-area {
   margin: 30px 0 0 0;
   padding: 0;
-  width: 231px;
+  min-width: 231px;
+  min-height: 30px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -175,6 +198,9 @@ body {
 
 .cart-compare-item {
   margin-right: 18px;
+  min-width: 105px;
+  min-height: 30px;
+  text-align: right;
 }
 
 .cart-compare-item:last-child {
@@ -254,7 +280,6 @@ body {
   list-style-type: none;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -728,7 +753,7 @@ body {
 }
 
 .logo-footer {
-margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .description-footer-address {
