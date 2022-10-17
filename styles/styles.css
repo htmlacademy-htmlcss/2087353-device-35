@@ -501,6 +501,8 @@ body {
 .section-filter-title {
   display: block;
   padding-bottom: 25px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .catalog-filter-group {
@@ -582,7 +584,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 
 .sorting-button-list {
@@ -607,8 +608,8 @@ body {
 
 .pagination-prev {
   width: 128px;
-   display: block;
-   margin-right: 145.5px;
+  display: block;
+  margin-right: 145.5px;
 
 
 
@@ -622,7 +623,7 @@ body {
 .pagination-next {
   min-width: 141px;
   display: block;
-   margin-left: 145.5px;
+  margin-left: 145.5px;
 }
 
 .catalog-products-pagination {
@@ -650,9 +651,15 @@ body {
 }
 
 .select-control {
+  font-family: 'Rubik';
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+  background-color: #F0F0F0;
+  border: 0;
+  width: 141px;
+  align-self: self-start;
+
 }
 
 .product-card-link {
