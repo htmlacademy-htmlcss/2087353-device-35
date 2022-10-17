@@ -436,12 +436,37 @@ body {
   color: #ffffff;
 }
 
+.bread-crumbs {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  padding-left: 60px;
+  display: block;
+}
+
+.bread-crumbs-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.breand-crumbs-item {
+  padding-right: 36px;
+}
+
+.breand-crumbs-item:last-child {
+  padding-right: 0;
+}
+
 .bread-crumbs-title {
   font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
+  flex-grow: 1;
 }
 
 .breand-crumbs-link {
@@ -468,8 +493,59 @@ body {
 .catalog-filters-container {
   width: 320px;
   display: flex;
-  padding-left: 60px;
+  padding-top: 25px;
   padding-right: 60px;
+  padding-left: 60px;
+}
+
+.section-filter-title {
+  display: block;
+  padding-bottom: 25px;
+}
+
+.catalog-filter-group {
+  margin: 35px 0 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.catalog-filter-title {
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.range-filter {
+  margin: 0;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-item {
+  padding-bottom: 17px;
+}
+
+.catalog-filter-item:last-child {
+  padding-bottom: 0;
+}
+
+.catalog-filter-Bluetooth {
+  padding-bottom: 20px;
+}
+
+.catalog-filter-Bluetooth {
+  padding-bottom: 0;
+}
+
+.button-filter {
+  margin-top: 35px;
+  min-width: 220px;
+  padding: 10px 5px;
+
+
 }
 
 .page-catalog-container {
@@ -502,10 +578,65 @@ body {
 
 .catalog-products-sorting {
   background-color: #F0F0F0;
+  padding: 25px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sorting-button-list {
+  display: flex;
+  list-style-type: none;
 }
 
 .catalog-products {
-  padding: 70px 40px 40px 44px;
+  padding: 70px 40px 40px 40px;
+}
+
+.pagination {
+  margin: 44px 0 0 0;
+  padding: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  list-style-type: none;
+  background-color: #EBEBEB;
+}
+
+.pagination-prev {
+  width: 128px;
+   display: block;
+   margin-right: 145.5px;
+
+
+
+
+}
+
+.pagination-item {
+  min-width: 40px;
+}
+
+.pagination-next {
+  min-width: 141px;
+  display: block;
+   margin-left: 145.5px;
+}
+
+.catalog-products-pagination {
+  padding-right: 40px;
+  padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination-show-more {
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #ffffff;
 }
 
 .select-control-title {

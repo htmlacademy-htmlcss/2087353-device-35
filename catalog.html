@@ -83,7 +83,7 @@
               <form class="filter-catalog-products" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Стоимость</legend>
-                  <input type="range" min="0" max="5000" step="1">
+                  <input class="range-filter" type="range" min="0" max="5000" step="1">
                 </fieldset>
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Цвет</legend>
@@ -129,7 +129,7 @@
                         Есть
                       </label>
                     </li>
-                    <li class="catalog-filter-item">
+                    <li class="catalog-filter-item catalog-filter-Bluetooth">
                       <label class="control">
                         <input class="control-input" type="radio" name="product-group" value="no">
                         Нет
@@ -144,23 +144,29 @@
             </section>
           </div>
           <div class="page-catalog-container">
-          <section class="catalog-products-sorting">
+            <section class="catalog-products-sorting">
               <span class="select-control-title">сортировка:</span>
               <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Популярные</option>
                 <option value="cheap">Сначала дешёвое</option>
                 <option value="expensive">Сначала дорогое</option>
               </select>
-              <a href="#" class="button button-less">
-                <span class="visually-hidden">
-                  Показать список от большего к меньшему
-                </span>
-              </a>
-              <a class="button button-more" href="#">
-                <span class="visually-hidden">
-                  Показать список от меньшего к большему
-                </span>
-              </a>
+              <ul class="sorting-button-list">
+                <li class="sorting-button-item">
+                  <a href="#" class="button button-less">
+                    <span class="visually-hidden">
+                      Показать список от большего к меньшему
+                    </span>
+                  </a>
+                </li>
+                <li class="sorting-button-item">
+                  <a class="button button-more" href="#">
+                    <span class="visually-hidden">
+                      Показать список от меньшего к большему
+                    </span>
+                  </a>
+                </li>
+              </ul>
             </section>
             <section class="catalog-products">
               <ul class="product-list">
@@ -211,7 +217,7 @@
                 Показать ещё
               </button>
               <ul class="pagination">
-                <li class="pagination-item">
+                <li class="pagination-prev">
                   <a class="pagination-link pagination-prev" href="#">
                     <span class="pagination-link-back">Назад</span>
                   </a>
