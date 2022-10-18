@@ -597,7 +597,7 @@ body {
 
 .pagination {
   margin: 44px 0 0 0;
-  padding: 25px 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -608,22 +608,39 @@ body {
 
 .pagination-prev {
   width: 128px;
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-right: 145.5px;
+}
 
-
-
-
+.prev-link {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
 }
 
 .pagination-item {
   min-width: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-current {
+padding-top: 10px;
+padding-bottom: 10px;
+width: 100%;
 }
 
 .pagination-next {
   min-width: 141px;
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-left: 145.5px;
+}
+
+.nextk-lin {
+padding-top: 25px;
+padding-bottom: 25px;
 }
 
 .catalog-products-pagination {
