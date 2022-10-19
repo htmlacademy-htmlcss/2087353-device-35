@@ -595,6 +595,16 @@ body {
   padding: 70px 40px 40px 40px;
 }
 
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
 .pagination {
   margin: 44px 0 0 0;
   padding: 0;
