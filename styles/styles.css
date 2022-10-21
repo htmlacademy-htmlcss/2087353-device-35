@@ -623,7 +623,7 @@ body {
 
 .product-card {
   display: grid;
-  grid-template-columns: 180px 160px;
+  grid-template-columns: 200px 160px;
   grid-template-rows: 380px min-content;
 }
 
