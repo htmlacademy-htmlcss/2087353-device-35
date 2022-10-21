@@ -10,11 +10,13 @@
   <body>
 
     <header class="page-header">
-      <div class="page-header-container">
-        <section class="user-navigation">
+      <div class="page-header-container page-container">
+        <section class="site-logo">
           <a class="link-main-page"><img class="logo logo-header" src="images/logo.svg" width="145" height="36"
               alt="Логотип магазина">
           </a>
+        </section>
+        <section class="user-navigation">
           <form class="header-form-search" action="https://echo.htmlacademy.ru/" method="get">
             <input class="user-search" id="search-field-id" type="search" name="searchfeld"
               placeholder="Поиск по сайту">
@@ -58,6 +60,23 @@
       <h1 class="visually-hidden">Магазин «Девайс»</h1>
       <div class="page-container">
         <section class="slider-product">
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
           <div class="slider-product-wrapper">
             <h2 class="visually-hidden">Слайдер товара</h2>
             <img class="image product-slider-image" src="images/slide-quadcopter.png" width="560" height="560"
@@ -68,23 +87,7 @@
             <button class="slider-button slider-next" type="button">
               <span class="visually-hidden">Следующее фото</span>
             </button>
-            <ol class="slider-pagination">
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                  <span class="visually-hidden">1 фото</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">2 фото</span>
-                </button>
-              </li>
-              <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">3 фото</span>
-                </button>
-              </li>
-            </ol>
+
           </div>
           <div class="advantages-product-wrapper">
             <h3 class="advantages-product main-title">
@@ -94,15 +97,15 @@
               Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
               замаскированным под стандартную камеру.
             </p>
-            <a href="#" class="button">Подробнее</a>
+            <a href="#" class="button detailed-button">Подробнее</a>
             <table class="product-character">
               <tr class="character">
-                <td>800 м</td>
-                <td>50 м</td>
+                <td class="character-value">800 м</td>
+                <td class="character-value">50 м</td>
               </tr>
               <tr class="title-character">
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
+                <td class="title-character-item">Дальность полета</td>
+                <td class="title-character-item">Радиус поражения</td>
               </tr>
             </table>
           </div>
@@ -164,7 +167,7 @@
         </section>
       </div>
       <div class="index-columns">
-        <div class="tab-navigation-container">
+        <div class="tab-navigation-container page-container">
           <section class="tab-navigation">
             <h2 class="visually-hidden">Навигация общей информации</h2>
             <ul class="list-tab-navigation">
@@ -195,13 +198,13 @@
           </section>
         </div>
       </div>
-      <article class="delivery-rare-product">
+      <article class="delivery-rare-product page-container">
         <h2 class="visually-hidden">Доставка редких товаров</h2>
         <a class="title-delivery-rare-product" href="#">
           Доставим редкий товар под заказ
         </a>
       </article>
-      <div class="information-container">
+      <div class="information-container page-container">
         <section class="about-us">
           <h2 class="about-us-title main-title">О нас</h2>
           <p class="description description-about-us">
