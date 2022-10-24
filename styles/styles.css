@@ -105,7 +105,7 @@ body {
 }
 
 .product-slider-image {
-  order: 2;
+  object-fit: contain;
 }
 
 .slider-next {
@@ -239,8 +239,13 @@ body {
 
 .detailed-button {
   display: flex;
+  justify-content: center;
   padding: 10px 5px 10px 5px;
   margin-bottom: 60px;
+  width: 220px;
+  background-image: url(../images/backgroun-button.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
 .information-container {
@@ -305,7 +310,7 @@ body {
 }
 
 .catalogue-icon {
-margin-left: 12px;
+  margin-left: 12px;
 }
 
 .main-navigation-list {
