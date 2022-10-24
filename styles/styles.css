@@ -115,6 +115,7 @@ body {
 }
 
 .slider-pagination {
+  list-style-type: none;
   min-width: 76px;
   min-height: 12px;
   margin: 0;
@@ -136,6 +137,17 @@ body {
 .slider-pagination-item:last-child {
   padding-right: 0;
 }
+
+.slider-pagination-button-current {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border: 2px #000000 solid;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+
 
 .advantages-product-wrapper {
   width: 600px;
@@ -176,7 +188,6 @@ body {
 
 .header-form-search {
   width: 517px;
-
   display: flex;
   margin-top: 30px;
 }
