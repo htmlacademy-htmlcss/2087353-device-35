@@ -78,6 +78,7 @@ body {
   padding-right: 60px;
   padding-left: 60px;
   display: flex;
+  margin-bottom: 30px;
 }
 
 .slider-product {
@@ -183,13 +184,12 @@ body {
 
 .link-main-page {
   width: 100%;
-  margin-top: -20px;
+  margin-top: -18px;
 }
 
 .header-form-search {
   width: 517px;
   display: flex;
-  margin-top: 30px;
 }
 
 .user-search {
@@ -197,20 +197,34 @@ body {
 }
 
 .personal-area {
-  margin: 30px 0 0 26px;
+  margin: 0 0 0 26px;
   padding: 0;
-  min-width: 231px;
+  min-width: 200px;
   min-height: 30px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
+.number-of-products {
+  width: 21px;
+  height: 21px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 17px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 28px;
+}
+
 .cart-compare-link {
   display: flex;
   align-items: center;
-  margin-top: 30px;
-  margin-left: auto;
+
+  margin: 0 0 0 auto;
   margin-bottom: 0;
   padding: 0;
 }
@@ -235,8 +249,6 @@ body {
 
 .delivery-rare-product {
   margin-top: 70px;
-  padding-top: 40px;
-  padding-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,13 +263,23 @@ body {
 .detailed-button {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 10px 5px 10px 5px;
   margin-bottom: 60px;
   width: 220px;
-  background-image: url(../images/backgroun-button.svg);
-  background-repeat: no-repeat;
-  background-position: center left;
+  z-index: 2;
+  position: relative;
 }
+
+.detailed-button::before {
+  content: "";
+  background-image: url(../images/backgroun-button.svg);
+  position: absolute;
+  height: 8px;
+  width: 220px;
+  z-index: -1;
+}
+
 
 .information-container {
   margin-top: 70px;
@@ -289,6 +311,11 @@ body {
 .user-navigation-link {
   color: #000000;
   text-decoration: none;
+  position: relative;
+}
+
+.cart-link {
+  padding-left: 43px;
 }
 
 .navigation-icon {
@@ -322,6 +349,7 @@ body {
 
 .catalogue-icon {
   margin-left: 12px;
+
 }
 
 .main-navigation-list {
@@ -416,6 +444,11 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
 }
 
 .about-us-item {
@@ -874,8 +907,7 @@ body {
 
 .list-tab-navigation {
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+
   padding: 64px 0 64px 0;
   margin: 0;
   border-right: 7px solid #000000;
@@ -891,18 +923,61 @@ body {
 }
 
 .button-tab-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  background-color: #ffffff00;
+  border: 0;
+  position: relative;
+  z-index: 999;
+}
+
+.button-tab-navigation::before {
+  content: "";
+  background-image: url(../images/backgroun-button.svg);
+  background-size: cover;
+  height: 8px;
+  width: 160px;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.button-tab-navigation:hover {
   width: 100%;
+  padding-left: 21px;
+  text-align: left;
 }
 
 .tab-information {
   width: 873px;
   padding: 72px 63px 72px 116px;
+  background-image: url(../images/postman.svg);
+  background-repeat: no-repeat;
+  background-position: 670px 78px;
 
 
 }
 
 .description-information {
   width: 452px;
+}
+
+.delivery-car-icon {
+  padding: 39px 34px 39px 34px;
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
+}
+
+.delivery-icon {
+  padding: 14px 19px 14px 19px;
+  width: 40px;
+  height: 40px;
+  background-color: #DCDCDC80;
+  border-radius: 50%;
+  margin-right: 42.5px;
 }
 
 .about-us {
