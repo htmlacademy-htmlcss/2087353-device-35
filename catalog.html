@@ -9,13 +9,14 @@
 
   <body>
     <header class="page-header">
-      <div class="page-header-container page-container">
+      <div class="page-header-container-catalogue page-container">
         <div class="site-logo">
           <a class="link-main-page"><img class="logo logo-header" src="images/logo.svg" width="145" height="36"
               alt="Логотип магазина">
           </a>
         </div>
         <section class="user-navigation">
+          <h2 class="visually-hidden">Поиск и навигация</h2>
           <form class="header-form-search" action="https://echo.htmlacademy.ru/" method="get">
             <input class="user-search" id="search-field-id" type="search" name="searchfeld"
               placeholder="Поиск по сайту">
@@ -25,21 +26,50 @@
           </form>
           <ul class="user-navigation-list personal-area">
             <li class="user-navigation-item">
-              <a class="user-navigation-link" href="#">Войти</a>
+              <a class="user-navigation-link navigation-link-in" href="#"><svg class="navigation-icon"
+                  aria-hidden="true" focusable="false" width="15" height="12" viewBox="0 0 15 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0S4 1.6 4 3.5c0 1.3.7 2.4 1.7 3C3.1 7.2 1.2 9.4 1 12Z"
+                    fill="#000" />
+                </svg><span class="user-name">Коля Петухов</span>
+              </a>
+            </li>
+            <li class="user-navigation-item">
+              <a class="user-navigation-link navigation-link-out" href="#">
+                <span class="user-out">Выйти</span>
+              </a>
             </li>
           </ul>
           <ul class="user-navigation-list cart-compare-link">
             <li class="user-navigation-item cart-compare-item">
-              <a class="user-navigation-link" href="#">Сравнить</a>
+              <a class="user-navigation-link" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="10" height="12"
+                  viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#a)" fill="#000">
+                    <path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" />
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h10v12H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>Сравнить
+              </a>
             </li>
             <li class="user-navigation-item cart-compare-item">
-              <a class="user-navigation-link" href="#">Корзина</a>
+              <a class="user-navigation-link cart-link" href="#"><span class="number-of-products">
+                2
+              </span>
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" fill="#000"/></svg>Корзина
+              </a>
             </li>
           </ul>
         </section>
         <nav class="main-nav">
           <button class="button button-catalogue" type="button">
-            Каталог товаров
+            <span class="button-catalogue-title"> Каталог товаров</span>
+            <svg class="catalogue-icon" aria-hidden="true" focusable="false" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" fill="#000"/><circle opacity=".3" cx="25" cy="25" r="24" stroke="#000" stroke-width="2"/></svg>
           </button>
           <ul class="main-navigation-list">
             <li class="main-navigation-item">
@@ -156,6 +186,7 @@
               <ul class="sorting-button-list">
                 <li class="sorting-button-item">
                   <a href="#" class="button button-less">
+                    <svg class="less-icon" aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".2" clip-path="url(#a)"><path d="m6 0 5.5 10H.5" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(.5)" d="M0 0h11v10H0z"/></clipPath></defs></svg>
                     <span class="visually-hidden">
                       Показать список от большего к меньшему
                     </span>
@@ -163,7 +194,7 @@
                 </li>
                 <li class="sorting-button-item">
                   <a class="button button-more" href="#">
-                    <span class="visually-hidden">
+                    <svg class="less-icon" aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".2" clip-path="url(#a)"><path d="M6 10 .5 0h11" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" transform="rotate(180 5.75 5)" d="M0 0h11v10H0z"/></clipPath></defs></svg><span class="visually-hidden">
                       Показать список от меньшего к большему
                     </span>
                   </a>
@@ -242,7 +273,7 @@
                   <a class="pagination-link pagination-current" href="#">15</a>
                 </li>
                 <li class="pagination-item pagination-next">
-                  <a class="pagination-link nextk-lin" href="#">
+                  <a class="nextk-link" href="#">
                     <span class="pagination-link-forward">Вперед</span>
                   </a>
                 </li>
@@ -275,17 +306,17 @@
             </li>
           </ul>
           <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button button-social" href="https://t.me/htmlacademy">
+            <li class="footer-social-item social-telegram">
+              <a class="button button-social " href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграмм</span>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a class="button button-social" href="https://www.youtube.com/user/htmlacademyru">
+            <li class="footer-social-item social-youtube">
+              <a class="button button-social " href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ютуб</span>
               </a>
             </li>
-            <li class="footer-social-item">
+            <li class="footer-social-item social-twitter">
               <a class="button button-social" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твитер</span>
               </a>
