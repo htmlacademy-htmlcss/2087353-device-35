@@ -74,6 +74,10 @@ body {
   padding-bottom: 150px;
 }
 
+.logo-header:hover {
+  opacity: 0.6;
+}
+
 .site-logo {
   padding-right: 60px;
   padding-left: 60px;
@@ -196,6 +200,8 @@ body {
 
 .user-search {
   width: 359px;
+  border-radius: 50px 0 0 50px;
+  padding-left: 16px;
 }
 
 .personal-area {
@@ -564,6 +570,18 @@ body {
   padding-right: 0;
 }
 
+.breand-crumbs-item:nth-child(1) {
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 79px center;
+  }
+
+.breand-crumbs-item:nth-child(2) {
+background-image: url(../images/arrow.svg);
+background-repeat: no-repeat;
+background-position: 145px center;
+}
+
 .bread-crumbs-title {
   font-family: "Raleway", sans-serif;
   color: #000000;
@@ -612,6 +630,7 @@ body {
   margin: 35px 0 0 0;
   padding: 0;
   border: 0;
+  width: 100%;
 }
 
 .range-filter {
@@ -684,6 +703,8 @@ body {
   line-height: 20px;
   padding-top: 12px;
   padding-bottom: 20px;
+  width: 100%;
+  border-top: 2px solid #000;
 }
 
 .filter-catalog-products {
