@@ -74,15 +74,24 @@ body {
   padding-bottom: 150px;
 }
 
-.logo-header:hover {
-  opacity: 0.6;
-}
-
 .site-logo {
   padding-right: 60px;
   padding-left: 60px;
   display: flex;
   margin-bottom: 30px;
+}
+
+.logo-header:hover {
+  opacity: 0.6;
+}
+
+.logo-header:active {
+  opacity: 0.3;
+}
+
+.logo-header:focus-visible {
+  opacity: 1;
+  outline: 2px solid #AF4FFF;
 }
 
 .slider-product {
@@ -193,16 +202,12 @@ body {
   margin-top: -18px;
 }
 
+
 .header-form-search {
   width: 517px;
   display: flex;
 }
 
-.user-search {
-  width: 359px;
-  border-radius: 50px 0 0 50px;
-  padding-left: 16px;
-}
 
 .personal-area {
   margin: 0 0 0 26px;
@@ -310,7 +315,15 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  width: 359px;
+  border-radius: 50px 0 0 50px;
+  padding-left: 48px;background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  opacity: 1;
 }
+
+
 
 .button-search-header {
   font-family: "Rubik", sans-serif;
