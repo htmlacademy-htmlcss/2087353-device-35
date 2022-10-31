@@ -349,7 +349,7 @@ body {
   margin-top: 40px;
 }
 
-.link-main-page .link-main-page:hover {
+.link-main-page:hover {
   opacity: 0.6;
 }
 
@@ -463,20 +463,82 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+}
+
+.navigation-category-container {
+  position: absolute;
+  padding: 0;
+  background-color: #FFE17F;
+  text-align: left;
+  font-size: 16px;
+  line-height: 18px;
+  bottom: -90px;
+}
+
+.flex-tab-wrap {
+  display: flex;
+}
+
+.visibility-container {
+  display: none;
+}
+
+.navigation-category-list {
+  margin: 0;
+  padding: 0;
+  width: max-content;
+}
+
+.navigation-category-item {
+  list-style-type: none;
+  padding: 0 0 6px 0;
+  margin: 0;
+}
+
+.navigation-category-link {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.first-list {
+  margin-right: 56px;
+}
+
+.second-list {
+  margin-right: 68px;
 }
 
 .button-catalogue {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
   min-width: 293px;
   background-color: #FFE17F;
   border: 0;
   cursor: pointer;
+  padding: 0;
+  position: relative;
+}
+
+.button-catalogue-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  height: 50px;
+  padding: 15px 0 15px 0;
+}
+
+.button-catalogue:active .visibility-container {
+  display: block;
+}
+
+.button-catalogue:active .icon-plus {
+  display: none;
 }
 
 .catalogue-icon {
@@ -484,16 +546,28 @@ body {
   opacity: 0.3;
 }
 
-.button-catalogue:hover .catalogue-icon {
+.catalogue-icon:hover  {
   opacity: 1;
 }
 
-.button-catalogue:active .catalogue-icon {
+
+
+.catalogue-icon:active {
   opacity: 1;
 }
 
-.button-catalogue:focus-visible {
+.catalogue-icon:focus-visible {
   outline: 2px solid #AF4FFF;
+}
+
+.icon-minus {
+  position: absolute;
+  margin: 0;
+  right: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+
 }
 
 .main-navigation-list {
@@ -1488,7 +1562,22 @@ body {
   width: 253px;
   padding: 18px 39px 18px 39px;
   border: 3px solid #C4C4C4;
+}
 
+.button-subscription:hover {
+  background-color: #000000;
+  border-color: #000000;
+  color: #FFFFFF;
+}
+
+.button-subscription:active {
+  background-color: #000000;
+  border-color: #000000;
+  color: #FFFFFF30;
+}
+
+.button-subscription:focus-visible {
+  outline: 2px solid #AF4FFF;
 }
 
 .free {
