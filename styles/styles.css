@@ -92,13 +92,17 @@ body {
 .overall-slider-product {
   display: flex;
   position: relative;
+}
 
+.overall-slider-selfie, .overall-slider-smartwatch {
+  display: none;
 }
 
 .slider-product {
   position: relative;
-  background: linear-gradient(360deg, #FFFFFF 91.5%, #FFE17F 9%);
+  background: linear-gradient(360deg, #FFFFFF 417px, #FFE17F 300px);
 }
+
 
 .slider-product-wrapper {
   display: flex;
@@ -647,7 +651,7 @@ body {
 }
 
 .index-columns {
-  background: linear-gradient(180deg, #FFFFFF 28%, #F0F0F0 9%);
+  background: linear-gradient(180deg, #FFFFFF 102px, #F0F0F0 0);
 }
 
 
@@ -1527,12 +1531,14 @@ body {
   background-image: url(../images/guarantee.svg);
   background-repeat: no-repeat;
   background-position: 670px 78px;
+  display: none;
 }
 
 .credit-tab-wrap {
   background-image: url(../images/credit.svg);
   background-repeat: no-repeat;
   background-position: 670px 78px;
+  display: none;
 }
 
 .description-information {
