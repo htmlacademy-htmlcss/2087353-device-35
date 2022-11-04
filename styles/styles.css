@@ -89,12 +89,6 @@ body {
   opacity: 0.3;
 }
 
-.logo-header:focus-visible {
-  opacity: 1;
-  outline: 2px solid #AF4FFF;
-}
-
-
 .overall-slider-product {
   display: flex;
   position: relative;
@@ -248,6 +242,9 @@ body {
   width: min-content;
 }
 
+.link-main-page:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
 
 .header-form-search {
   width: 517px;
@@ -329,6 +326,7 @@ body {
   margin-bottom: 50px;
   width: 220px;
   position: relative;
+  z-index: 1;
 }
 
 .interaction-button::before {
@@ -442,6 +440,10 @@ body {
 
 .button-search-header:focus-visible {
   outline: 2px solid #AF4FFF;
+}
+
+.button-search-header:disabled {
+ opacity: 0.3;
 }
 
 .user-navigation-link {
@@ -930,6 +932,10 @@ body {
   padding: 10px 5px;
   position: relative;
   z-index: 1;
+}
+
+.button-filter:disabled {
+  opacity: 0.3;
 }
 
 .page-catalog-container {
@@ -1689,6 +1695,10 @@ body {
 
 .button-subscription:focus-visible {
   outline: 2px solid #AF4FFF;
+}
+
+.button-subscription:disabled {
+  opacity: 0.3;
 }
 
 .free {
