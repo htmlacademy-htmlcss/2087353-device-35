@@ -925,17 +925,20 @@ body {
   padding-bottom: 0;
 }
 
-.button-filter {
+.interaction-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFFFFF00;
+  background:none;
   border: 0;
-  margin-top: 35px;
   min-width: 220px;
   padding: 10px 5px;
   position: relative;
   z-index: 1;
+}
+
+.button-filter {
+  margin-top: 35px;
 }
 
 .button-filter:disabled {
@@ -1012,6 +1015,7 @@ body {
 .product-card-link {
   text-decoration: none;
   position: relative;
+
 }
 
 .product-card-image {
@@ -1024,37 +1028,20 @@ body {
 
 .button-card-link {
   display: none;
-  text-align: center;
-  background-color: #FFFFFF00;
-  border: 0;
-  min-width: 220px;
-  padding: 10px 5px;
   position: absolute;
   top: 170px;
   left: 70px;
   z-index: 1;
 }
 
-
-.button-card-link::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 8px;
-  background: #FFE17F;
-  position: absolute;
-  top: 50%;
-  z-index: -1;
-  margin-top: -4px;
-  transition: all 0.3s;
-}
-
-.button-card-link:hover::before {
-  height: 100%;
+.position {
+  position: relative;
 }
 
 .button-card-link:active::before {
   height: 100%;
+  top: 0;
+  margin: 0;
   background: #FFCC33;
 }
 
