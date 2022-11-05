@@ -1051,11 +1051,11 @@ body {
   justify-content: center;
 }
 
-.product-card-wrap:hover {
+.product-card:hover .product-card-wrap {
   opacity: 0.6;
 }
 
-.product-card-wrap:active {
+.product-card:active .product-card-wrap {
   opacity: 0.3;
 }
 
