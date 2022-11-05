@@ -564,9 +564,6 @@ body {
   display: none;
 }
 
-.button-catalogue:active .icon-plus {
-  display: none;
-}
 
 .catalogue-icon {
   margin-left: 12px;
