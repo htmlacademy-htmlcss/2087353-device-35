@@ -81,7 +81,11 @@
                 <circle cx="25" cy="25" r="24" stroke="#000" stroke-width="2" />
               </svg>
               <svg class="catalogue-icon icon-minus visibility-container" aria-hidden="true" focusable="false"
-               width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M49 25c0 13.255-10.745 24-24 24S1 38.255 1 25 11.745 1 25 1s24 10.745 24 24Z" stroke="#000" stroke-width="2"/><path d="M33 24H17v2h16v-2Z" fill="#000"/></svg>
+                width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M49 25c0 13.255-10.745 24-24 24S1 38.255 1 25 11.745 1 25 1s24 10.745 24 24Z" stroke="#000"
+                  stroke-width="2" />
+                <path d="M33 24H17v2h16v-2Z" fill="#000" />
+              </svg>
             </button>
             <ul class="main-navigation-list">
               <li class="main-navigation-item">
@@ -154,39 +158,65 @@
               <form class="filter-catalog-products" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Стоимость</legend>
-                  <input class="range-filter" type="range" min="0" max="5000" step="1">
+                  <!-- <input class="range-filter" type="range" min="0" max="5000" step="1"> -->
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 119px; width: 81px">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="range-wrapper-inputs">
+                      <label class="catalog-filter-label">
+                        от <input class="range-input range-input-min" type="number" value="0" name="min-price">
+                      </label>
+                      <label class="catalog-filter-label">
+                        до <input class="range-input range-input-max" type="number" value="5000" name="max-price">
+                      </label>
+                    </div>
+                  </div>
                 </fieldset>
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Цвет</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="black" checked>
-                        Черный
+                        <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Черный</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="white" checked>
-                        Белый
+                        <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Белый</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="blue">
-                        Синий
+                        <input class="visually-hidden control-input" type="checkbox" name="blue">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Синий</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="red">
-                        Красный
+                        <input class="visually-hidden control-input" type="checkbox" name="red">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Красный</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="checkbox" name="pink">
-                        Розовый
+                        <input class="visually-hidden control-input" type="checkbox" name="pink">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Розовый</span>
                       </label>
                     </li>
                   </ul>
@@ -196,14 +226,16 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="yes" checked>
-                        Есть
+                        <input class="visually-hidden control-input" type="radio" name="product-group" value="yes" checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Есть</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item catalog-filter-Bluetooth">
                       <label class="control">
-                        <input class="control-input" type="radio" name="product-group" value="no">
-                        Нет
+                        <input class="visually-hidden control-input" type="radio" name="product-group" value="no">
+                        <span class="control-mark"></span>
+                        <span class="control-label"> Нет</span>
                       </label>
                     </li>
                   </ul>
@@ -244,12 +276,12 @@
                 <li class="product-card">
                   <a href="#" class="product-card-link">
                     <div class="product-card-wrap">
-                    <img class="product-card-image" src="images/product-selfie.jpg" width="360" height="380"
-                      alt="Селфи-палка">
-                    <h3 class="product-card-title">
-                      Любительская селфи-палка
-                    </h3>
-                    <span class="product-card-price">500 ₽</span>
+                      <img class="product-card-image" src="images/product-selfie.jpg" width="360" height="380"
+                        alt="Селфи-палка">
+                      <h3 class="product-card-title">
+                        Любительская селфи-палка
+                      </h3>
+                      <span class="product-card-price">500 ₽</span>
                     </div>
                     <button class="button button-card-link interaction-button">Подробнее</button>
                   </a>
@@ -257,10 +289,10 @@
                 <li class="product-card">
                   <a href="#" class="product-card-link">
                     <div class="product-card-wrap">
-                    <img class="product-card-image" src="images/professional-selfie-stick.jpg" width="360" height="380"
-                      alt="Профессиональная-cелфи-палка">
-                    <h3 class="product-card-title">Профессиональная селфи-палка</h3>
-                    <span class="product-card-price">1500 ₽</span>
+                      <img class="product-card-image" src="images/professional-selfie-stick.jpg" width="360"
+                        height="380" alt="Профессиональная-cелфи-палка">
+                      <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                      <span class="product-card-price">1500 ₽</span>
                     </div>
                     <button class="button button-card-link interaction-button">Подробнее</button>
                   </a>
@@ -268,10 +300,10 @@
                 <li class="product-card">
                   <a href="#" class="product-card-link">
                     <div class="product-card-wrap">
-                    <img class="product-card-image" src="images/unsinkable-selfie-stick.jpg" width="360" height="380"
-                      alt="Непотопляемая-селфи-палка">
-                    <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
-                    <span class="product-card-price">2 500 ₽</span>
+                      <img class="product-card-image" src="images/unsinkable-selfie-stick.jpg" width="360" height="380"
+                        alt="Непотопляемая-селфи-палка">
+                      <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                      <span class="product-card-price">2 500 ₽</span>
                     </div>
                     <button class="button button-card-link interaction-button">Подробнее</button>
                   </a>

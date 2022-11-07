@@ -94,7 +94,8 @@ body {
   position: relative;
 }
 
-.overall-slider-selfie, .overall-slider-smartwatch {
+.overall-slider-selfie,
+.overall-slider-smartwatch {
   display: none;
 }
 
@@ -398,16 +399,13 @@ body {
   border-right: 0;
 }
 
-.user-search:focus {
-  outline: 2px solid #AF4FFF
-}
 
 .user-search:focus-visible {
-  outline: 2px solid #AF4FFF
+  outline: 2px solid #AF4FFF;
 }
 
-.user-search:not(:focus-visible) {
-  outline: none;
+.user-search:disabled {
+  opacity: 0.3;
 }
 
 .user-search::placeholder {
@@ -447,7 +445,7 @@ body {
 }
 
 .button-search-header:disabled {
- opacity: 0.3;
+  opacity: 0.3;
 }
 
 .user-navigation-link {
@@ -825,6 +823,7 @@ body {
 .breand-crumbs-link:focus-visible {
   outline: 2px solid #AF4FFF;
 }
+
 .breand-crumbs-item {
   display: flex;
 }
@@ -930,7 +929,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:none;
+  background: none;
   border: 0;
   min-width: 220px;
   padding: 10px 5px;
@@ -1237,7 +1236,7 @@ body {
   opacity: 0.3;
 }
 
-.button-less:hover  {
+.button-less:hover {
   opacity: 0.5;
 }
 
@@ -1669,6 +1668,18 @@ body {
   border-bottom: 3px solid #C4C4C4;
 }
 
+
+
+.subscription-email:focus-visible {
+  outline: 2px solid #AF4FFF;
+  background-color: #DCDCDC;
+}
+
+.subscription-email:invalid {
+  border-bottom: 3px solid #FF3D3D;
+}
+
+
 .button-subscription {
   width: 253px;
   padding: 18px 39px 18px 39px;
@@ -1851,4 +1862,173 @@ body {
 
 .logo-academy:focus-visible {
   outline: 1px solid #AF4FFF;
+}
+
+.filter-catalog-products {
+  width: 200px;
+}
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 6px;
+  background-color: #000000;
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #DCDCDC;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #F0F0F0;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #FFE17F;
+}
+
+.range-toggle:active {
+  background-color: #FFE17F;
+}
+
+.range-toggle:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -119px;
+}
+
+.toggle-max {
+  top: -8px;
+  left: 0;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+}
+
+.catalog-filter-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalog-filter-label {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.catalog-filter-label:first-child {
+  margin-right: 57px;
+}
+
+.range-input {
+  padding: 2px 8px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input-min {
+  width: 30px;
+
+}
+
+.range-input-max {
+  width: 50px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #CCCCCC;
+  border-radius: 3px;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control:disabled {
+  opacity: 0.1;
+}
+
+.control:focus-visible .control-mark {
+  outline: 2px solid #AF4FFF;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark{
+  border: 2px solid #000000;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../images/check-black.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background-color: #000000;
+  border-radius: 50%;
+  content: "";
+}
+
+
+.control-input[type="radio"]:checked + .control-mark{
+  border: 2px solid #000000;
 }
