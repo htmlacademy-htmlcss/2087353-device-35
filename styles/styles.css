@@ -482,14 +482,27 @@ body {
 
 .popover-container {
   position: absolute;
-  right: -18px;
+  right: -17px;
   width: 320px;
-  height: 301px;
+  min-height: 301px;
   background-color: #000000;
   z-index: 100;
   display: flex;
   flex-wrap: wrap;
   padding: 20px 0 20px 0;
+}
+
+.popover-container::before {
+  content: "";
+  width: 14px;
+  height: 6px;
+  background-image: url(../images/arrow-popover.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5.5px;
 }
 
 .shopping-cart-list {
