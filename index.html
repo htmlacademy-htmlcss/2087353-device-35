@@ -64,7 +64,7 @@
                     fill="#000" />
                 </svg>Корзина
               </a>
-              <div class="popover-container">
+              <div class="popover-container popover-container-close">
                 <h2 class="visually-hidden">Мини-корзина товара</h2>
                 <ul class="shopping-cart-list">
                   <li class="shopping-cart-item">
@@ -400,46 +400,6 @@
         <a class="title-delivery-rare-product" href="#">
           Доставим редкий товар под заказ
         </a>
-        <div class="popover-delivery-container">
-          <h2 class="popover-delivery-title">Доставка под заказ</h2>
-          <button class="close-popover-delivery" type="button">
-            <span class="visually-hidden">закрыть окно</span>
-          </button>
-          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="get">
-            <p class="field-group delivery-form-name">
-            <label class="form-label" for="delivery-name">
-              Ваше имя
-            </label>
-            <input class="field-form delivery-field-name" type="text" id="delivery-name" name="delivery-name" placeholder="Ваше имя">
-          </p>
-          <p class="field-group delivery-form-email">
-            <label class="form-label" for="delivery-email">
-              Ваш e-mail:
-            </label>
-            <input class="field-form delivery-field-email" type="email" id="delivery-email" name="delivery-email" placeholder="почта">
-          </p>
-          <p class="field-group delivery-form-object">
-            <label class="form-label" for="delivery-object">
-              Что нужно привезти:
-            </label>
-            <input class="field-form delivery-field-object" type="text" id="delivery-object" name="delivery-object" placeholder="В свободной форме">
-          </p>
-          <p class="field-group delivery-form-number">
-            <label class="form-label" for="delivery-number">
-              Количество:
-            </label>
-
-            <svg class="icon-number-minus" aria-hidden="true"
-              focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 7H0v2h16V7Z" fill="#000"/></svg>
-            <input class="field-form delivery-field-number" type="number" id="delivery-number" name="delivery-number" value="1" min="1" max="100" step="1">
-            <svg class="icon-number-plus" aria-hidden="true"
-            focusable="false"  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="#000"/></svg>
-          </p>
-          <button class="button form-submit interaction-button" type="submit">
-            Отправить
-          </button>
-          </form>
-        </div>
       </article>
       <div class="information-container page-container">
         <section class="about-us">
@@ -554,6 +514,56 @@
         </section>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <section class="popover-delivery-container">
+        <h2 class="popover-delivery-title">Доставка под заказ</h2>
+        <button class="button close-popover-delivery" type="button">
+          <span class="visually-hidden">закрыть окно</span>
+        </button>
+        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="get">
+          <p class="field-group delivery-form-name">
+            <label class="form-label" for="delivery-name">
+              Ваше имя
+            </label>
+            <input class="field-form delivery-field-name" type="text" id="delivery-name" name="delivery-name"
+              placeholder="Ваше имя">
+          </p>
+          <p class="field-group delivery-form-email">
+            <label class="form-label form-label-email" for="delivery-email">
+              Ваш e-mail:
+            </label>
+            <input class="field-form delivery-field-email" type="email" id="delivery-email" name="delivery-email"
+              placeholder="почта">
+          </p>
+          <p class="field-group delivery-form-object">
+            <label class="form-label" for="delivery-object">
+              Что нужно привезти:
+            </label>
+            <input class="field-form delivery-field-object" type="text" id="delivery-object" name="delivery-object"
+              placeholder="В свободной форме">
+          </p>
+          <p class="field-group delivery-form-number">
+            <label class="form-label form-label-number" for="delivery-number">
+              Количество:
+            </label>
+
+            <svg class="icon-number-minus" aria-hidden="true" focusable="false" width="16" height="16"
+              viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 7H0v2h16V7Z" fill="#000" />
+            </svg>
+            <input class="field-form delivery-field-number" type="number" id="delivery-number" name="delivery-number"
+               min="1" max="100" step="1" placeholder="1">
+            <svg class="icon-number-plus" aria-hidden="true" focusable="false" width="16" height="16"
+              viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="#000" />
+            </svg>
+          </p>
+          <button class="button form-submit interaction-button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </section>
+    </div>
   </body>
 
 </html>
