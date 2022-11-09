@@ -257,7 +257,6 @@ body {
   display: flex;
 }
 
-
 .personal-area {
   margin: 0 0 0 26px;
   padding: 0;
@@ -482,14 +481,14 @@ body {
 
 .popover-container {
   position: absolute;
-  right: -17px;
+  left: 857px;
   width: 320px;
   min-height: 301px;
   background-color: #000000;
   z-index: 100;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0 20px 0;
+  padding-bottom: 20px;
 }
 
 .popover-container::before {
@@ -522,14 +521,8 @@ popover-container-close {
   display: flex;
   list-style-type: none;
   align-self: flex-start;
-  height: 43px;
   width: 320px;
-  padding: 0 20px;
-  margin-bottom: 40px;
-}
-
-.shopping-cart-item:last-child {
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .shopping-cart-title {
@@ -820,7 +813,7 @@ popover-container-close {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .popover-delivery-container {
@@ -897,21 +890,18 @@ popover-container-close {
   width: 100%;
 }
 
-.form-label-email {
+.delivery-form-email {
   position: relative;
 }
 
-.form-label-email::after {
-  content: "Забавный у вас адрес";
+.form-error {
   font-family: inherit;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: #FF3D3D;
-  position: absolute;
-  left: 0;
-  bottom: -94px;
-  display: block;
+  margin-top: 3px;
+  display: none;
 }
 
 
@@ -969,8 +959,8 @@ popover-container-close {
   outline: 2px solid #FF3D3D;
 }
 
-.delivery-field-email:invalid .form-label-email::after {
-  display: none;
+.field-form:invalid:invalid + .form-error {
+  display: block;
 }
 
 .delivery-field-name {
