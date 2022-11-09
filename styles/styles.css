@@ -911,8 +911,9 @@ popover-container-close {
   position: absolute;
   left: 0;
   bottom: -94px;
-  /* display: none; */
+  display: block;
 }
+
 
 .form-label-number {
   position: relative;
@@ -968,7 +969,7 @@ popover-container-close {
   outline: 2px solid #FF3D3D;
 }
 
-.field-form:invalid .form-label-email::after {
+.delivery-field-email:invalid .form-label-email::after {
   display: none;
 }
 
@@ -1336,6 +1337,29 @@ popover-container-close {
   padding: 0;
   column-gap: 40px;
   row-gap: 40px;
+}
+
+.new::after {
+  content: "NEW";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: none;
+  position: absolute;
+  right: 27px;
+  top: 27px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:  2px solid rgba(0, 0, 0, 0.6);
 }
 
 .product-card-wrap {
