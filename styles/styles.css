@@ -1573,6 +1573,18 @@ popover-container-close {
   align-self: self-start;
 }
 
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:active {
+  opacity: 0.3;
+}
+
+.select-control:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
 .sorting-button-item {
   width: 30px;
   height: 30px;
