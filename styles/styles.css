@@ -1360,16 +1360,15 @@ popover-container-close {
 }
 
 .product-card-wrap {
-  display: grid;
-  grid-template-columns: 230px 130px;
-  grid-template-rows: 380px min-content;
   position: relative;
 }
 
 .product-card-link {
   text-decoration: none;
   position: relative;
-
+  display: grid;
+  grid-template-columns: 230px 130px;
+  grid-template-rows: 380px min-content;
 }
 
 .product-card-image {
@@ -1405,11 +1404,11 @@ popover-container-close {
   justify-content: center;
 }
 
-.product-card:hover .product-card-wrap {
+.product-card:hover .product-card-link {
   opacity: 0.6;
 }
 
-.product-card:active .product-card-wrap {
+.product-card:active .product-card-link {
   opacity: 0.3;
 }
 
