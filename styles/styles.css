@@ -820,7 +820,7 @@ popover-container-close {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .popover-delivery-container {
