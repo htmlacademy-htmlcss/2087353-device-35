@@ -541,6 +541,7 @@
             <label class="form-label" for="delivery-object">
               Что нужно привезти:
             </label>
+
             <input class="field-form delivery-field-object" type="text" id="delivery-object" name="delivery-object"
               placeholder="В свободной форме">
           </p>
@@ -548,7 +549,13 @@
             <label class="form-label form-label-number" for="delivery-number">
               Количество:
             </label>
-
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-number">
+                <svg  class="tooltip-icon"  width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="13" fill="#FFE17F"/><path d="M14 7h-2v2h2V7ZM14 11h-2v8h2v-8Z" fill="#000"/></svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label-number">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                к провозу багажа.</span>
+            </span>
             <svg class="icon-number-minus" aria-hidden="true" focusable="false" width="16" height="16"
               viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16 7H0v2h16V7Z" fill="#000" />

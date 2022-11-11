@@ -911,25 +911,48 @@ popover-container-close {
   display: none;
 }
 
-
-.form-label-number {
-  position: relative;
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
 }
 
-.form-label-number::after {
-  content: "";
+.tooltip-text {
+
+  background-color: #242424;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 19px 17px 19px 19px;
+  border-radius: 8px;
+  width: 200px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  /* display: none; */
+}
+
+.tooltip {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 2px;
   width: 26px;
   height: 26px;
-  border-radius: 50%;
-  background-color: #FFE17F;
-  background-image: url(../images/i.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
   right: 34px;
-  top: -2px;
+  top: -6px;
 }
 
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
 
 .field-form {
   border: none;
@@ -1356,7 +1379,7 @@ popover-container-close {
   display: flex;
   align-items: center;
   justify-content: center;
-  border:  2px solid rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(0, 0, 0, 0.6);
 }
 
 .product-card-wrap {
