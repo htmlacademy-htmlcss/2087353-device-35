@@ -136,6 +136,8 @@ body {
   position: absolute;
   top: 195px;
   left: 30px;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .product-slider-image {
@@ -147,6 +149,8 @@ body {
   position: absolute;
   top: 195px;
   right: 600px;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .slider-pagination {
@@ -511,7 +515,7 @@ body {
 }
 
 popover-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .shopping-cart-list {
@@ -915,9 +919,9 @@ popover-container-close {
 
 .tooltip-text {
   position: absolute;
-  bottom: 100%;
-  left: 50%;
-  z-index: 1;
+  bottom: -10px;
+  left: -20px;
+  z-index: 2;
   display: none;
   width: 200px;
   margin-bottom: 6px;
@@ -930,6 +934,19 @@ popover-container-close {
   background-color: #242424;
   border-radius: 8px;
   transform: translateX(-50%);
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 60px;
+  z-index: 1;
+  width: 14px;
+  height: 6px;
+  background-image: url(../images/arrow-popover.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .tooltip {
@@ -2424,7 +2441,7 @@ input::-webkit-inner-spin-button {
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
-   content: "";
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
