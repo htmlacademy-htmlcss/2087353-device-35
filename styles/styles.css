@@ -1819,6 +1819,7 @@ popover-container-close {
   width: 160px;
   background-color: #ffffff00;
   border: 0;
+
 }
 
 .item-tab-navigation:nth-child(1) {
@@ -1833,13 +1834,13 @@ popover-container-close {
   text-align: center;
   background: #000000;
   border: none;
+  transition: all 0.3s ease 0s;
 }
 
 
 
 .active-button-tab:hover {
   transform: translateX(25%);
-  transition: all 0.3s;
 
 }
 
