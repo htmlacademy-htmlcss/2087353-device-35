@@ -39,6 +39,11 @@ body {
   background: #ffffff;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -515,7 +520,7 @@ body {
   transform: translateX(-50%);
 }
 
-popover-container-close {
+.popover-container-close {
   display: none;
 }
 
@@ -580,6 +585,7 @@ popover-container-close {
 .cart-page-link {
   display: flex;
   justify-content: center;
+  max-width: 280px;
   align-items: center;
   margin: 20px auto 0 auto;
   padding: 14.5px 20px 14.5px 20px;
@@ -610,6 +616,7 @@ popover-container-close {
   font-size: 16px;
   line-height: 18px;
   background-color: #FFE17F;
+  z-index: 4;
 }
 
 .navigation-category-list {
@@ -641,7 +648,7 @@ popover-container-close {
 
 .button-catalogue {
   position: relative;
-  z-index: 1;
+  z-index: 5;
   display: flex;
   align-items: center;
   min-width: 293px;
@@ -1598,7 +1605,7 @@ popover-container-close {
 .select-control {
   width: 141px;
   align-self: self-start;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -2342,7 +2349,7 @@ popover-container-close {
 }
 
 .catalog-filter-label {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
