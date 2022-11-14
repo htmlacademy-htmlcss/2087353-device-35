@@ -184,6 +184,7 @@ body {
   border: 2px #000000 solid;
   border-radius: 50%;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .slider-pagination-item:nth-child(1) > .slider-pagination-button-current {
