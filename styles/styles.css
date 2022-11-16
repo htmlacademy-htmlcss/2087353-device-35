@@ -39,10 +39,10 @@ body {
   background: #ffffff;
 }
 
-/* img {
+img {
   max-width: 100%;
   object-fit: contain;
-} */
+}
 
 .visually-hidden {
   position: absolute;
@@ -84,7 +84,7 @@ body {
   display: flex;
   padding-right: 60px;
   padding-left: 60px;
-  margin-bottom: 19px;
+  margin-bottom: 25px;
 }
 
 .logo-header:hover {
@@ -263,7 +263,8 @@ body {
 
 .link-main-page {
   margin-top: -18px;
-  width: min-content;
+  display: flex;
+
 }
 
 .link-main-page:focus-visible {
@@ -335,7 +336,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 65px;
+  margin-top: 70px;
   text-align: center;
   background-color: #F0F0F0;
 }
@@ -377,7 +378,7 @@ body {
 
 .information-container {
   display: flex;
-  margin-top: 70px;
+  margin-top: 68px;
   width: 1160px;
 }
 
@@ -1279,7 +1280,7 @@ body {
 .catalog-filters-container {
   display: flex;
   width: 320px;
-  padding-top: 25px;
+  padding-top: 27px;
   padding-right: 60px;
   padding-left: 55px;
 }
@@ -1404,7 +1405,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 19px 40px 20px 37px;
+  padding: 22px 40px 20px 37px;
   background-color: #F0F0F0;
 }
 
@@ -2232,7 +2233,7 @@ body {
 .description-footer-address {
   position: relative;
   margin: 0;
-  padding-bottom: 70px;
+  padding-bottom: 74px;
 }
 
 .description-footer-address::after {
@@ -2496,7 +2497,7 @@ input::-webkit-inner-spin-button {
   opacity: 0.1;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark:focus-visible {
+.control-input[type="checkbox"]:focus-visible + .control-mark {
   outline: 2px solid #AF4FFF;
 }
 
@@ -2537,4 +2538,8 @@ input::-webkit-inner-spin-button {
 
 .control-input[type="radio"]:checked + .control-mark {
   border: 2px solid #000000;
+}
+
+.control-input[type="radio"]:focus-visible + .control-mark {
+  outline: 2px solid #AF4FFF;
 }
