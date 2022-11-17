@@ -267,10 +267,6 @@ img {
 
 }
 
-.link-main-page:focus-visible {
-  outline: 2px solid #AF4FFF;
-}
-
 .header-form-search {
   display: flex;
   width: 517px;
@@ -395,7 +391,6 @@ img {
 }
 
 .link-main-page:focus {
-  opacity: 1;
   outline: 2px solid #AF4FFF;
 }
 
@@ -684,6 +679,10 @@ img {
 
 .button-catalogue:active .visibility-container {
   display: block;
+}
+
+.button-catalogue:focus-visible {
+  outline: 2px solid #AF4FFF;
 }
 
 .visibility-container {
@@ -2428,7 +2427,7 @@ img {
   color: #000000;
   opacity: 0.3;
 }
-
+logo-header
 .catalog-filter-label:first-child {
   margin-right: 68px;
   display: flex;
